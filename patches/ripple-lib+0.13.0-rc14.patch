@@ -1,0 +1,13 @@
+diff --git a/node_modules/ripple-lib/dist/npm/core/remote.js b/node_modules/ripple-lib/dist/npm/core/remote.js
+index fdfb826..ff6181e 100644
+--- a/node_modules/ripple-lib/dist/npm/core/remote.js
++++ b/node_modules/ripple-lib/dist/npm/core/remote.js
+@@ -264,7 +264,7 @@ Remote.isValidMessage = function (message) {
+  */
+ 
+ Remote.isValidLedgerData = function (message) {
+-  return typeof message === 'object' && typeof message.fee_base === 'number' && typeof message.fee_ref === 'number' && typeof message.ledger_hash === 'string' && typeof message.ledger_index === 'number' && typeof message.ledger_time === 'number' && typeof message.reserve_base === 'number' && typeof message.reserve_inc === 'number';
++  return typeof message === 'object' && typeof message.fee_base === 'number' && typeof message.ledger_hash === 'string' && typeof message.ledger_index === 'number' && typeof message.ledger_time === 'number' && typeof message.reserve_base === 'number' && typeof message.reserve_inc === 'number';
+ };
+ 
+ /**
